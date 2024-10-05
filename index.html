@@ -5,31 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World Clock- Jesca Ngomane</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data-1970-2030.min.js"></script>
   <body>
     <header>
       <div class="container">
         <h1>World Clock</h1>
         <select>
           <option value="">Choose a City...</option>
-          <option value="London">London</option>
+          <option value="los-Angeles">Los-Angeles</option>
           <option value="Paris">Paris</option>
         </select>
 
-        <div class="city">
+        <div class="city" id="los-angeles">
           <div>
-            <h2>London</h2>
-            <div class="date">03 Octobet 2024</div>
+            <h2>Los-Angeles</h2>
+            <div class="date"></div>
           </div>
-          <div class="time">10:20:40<small>AM</small></div>
+          <div class="time"></div>
         </div>
 
-        <div class="city">
+        <div class="city" id="paris">
           <div>
             <h2>Paris</h2>
-            <div class="date">03 Octobet 2024</div>
+            <div class="date"></div>
           </div>
-          <div class="time">11:20:40<small>AM</small></div>
+          <div class="time"></div>
         </div>
       </div>
     </header>
@@ -39,7 +40,7 @@
       <a href="https://github.com/JescaNgomane" target="_blank"
         >Jesca Ngomane</a
       >
-      and an open source is found on
+      , an open source is found on
       <a
         href="https://github.com/JescaNgomane/world-clock-project"
         target="_blank"
